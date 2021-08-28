@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <div className="w-screen h-screen flex items-center justify-center">
       <h1 className="text-4xl">Hi Guys!</h1>
@@ -8,4 +8,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Index;
