@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route></Route>
+        <Route path="/">
+          <Home />
+        </Route>
       </Switch>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
