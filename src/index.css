@@ -2,17 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.placeholders {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
